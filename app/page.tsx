@@ -64,7 +64,7 @@ const SKILL_CATEGORIES = [
       "Design System Implementation"
     ]
   },
-  
+
 ];
 
 const QUALITIES = [
@@ -304,9 +304,9 @@ const About = () => {
                 // OLD: grayscale group-hover:grayscale-0
                 // NEW: grayscale-0 md:grayscale md:group-hover:grayscale-0
                 className="w-full h-full object-cover transition-all duration-700 
-             grayscale-0 md:grayscale 
-             md:group-hover:grayscale-0 
-             md:group-hover:scale-105"
+                  grayscale-0 md:grayscale 
+                  md:group-hover:grayscale-0 
+                  md:group-hover:scale-105"
               />
 
               {/* Floating Badge */}
@@ -591,7 +591,7 @@ const Contact = () => {
 
         {/* Call to Action Button */}
         <button className="group relative inline-flex items-center justify-center px-12 py-6 bg-white text-black rounded-full font-bold text-lg overflow-hidden transition-all hover:scale-105">
-       <Link href="/contact" className="...">   <span className="relative z-10">Reach Out &rarr;</span></Link> 
+          <Link href="/contact" className="...">   <span className="relative z-10">Reach Out &rarr;</span></Link>
           <div className="absolute inset-0 bg-[#4ADE80] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 ease-out" />
         </button>
 
