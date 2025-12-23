@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     icon: '/logo.png', // Ensure you have a favicon.ico or icon.png in public folder
   },
 };
-
+<Analytics />
 export default function RootLayout({
   children,
 }: {
