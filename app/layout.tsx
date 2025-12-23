@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 // Configure the primary font
 const font = Plus_Jakarta_Sans({ 
   subsets: ['latin'],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     icon: '/logo.png', // Ensure you have a favicon.ico or icon.png in public folder
   },
 };
-<Analytics />
+
 export default function RootLayout({
   children,
 }: {
@@ -35,6 +35,9 @@ export default function RootLayout({
         className={`${font.className} antialiased bg-[#050505] text-white selection:bg-[#4ADE80] selection:text-black`}
       >
         {children}
+        
+        {/* Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   );
