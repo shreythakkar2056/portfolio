@@ -38,9 +38,9 @@ export default function RootLayout({
         {children}
         
         {/* Vercel Analytics */}
-        <Analytics />
+        <Analytics/>
         {/* Vercel Speed Insights */}
-        <SpeedInsights />
+        <SpeedInsights/>
       </body>
     </html>
   );
